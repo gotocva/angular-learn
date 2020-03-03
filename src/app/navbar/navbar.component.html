@@ -1,0 +1,17 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li [ngClass]="activeMenu == 'home' ? 'active' : ''">
+          <a href="#" (click)="setActive('home')" routerLink="/">Home</a></li>
+        <li [ngClass]="activeMenu == 'contact' ? 'active' : ''"> 
+          <a href="#" (click)="setActive('contact')" routerLink="/contact">Contact</a>
+        </li>
+        
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+  </nav>
